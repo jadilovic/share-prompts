@@ -168,3 +168,48 @@
 .flex-between {
 	@apply flex justify-between items-center;
 }
+
+/* My Styling */
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+p {
+	padding: 1em;
+}
+
+.desktop-nav {
+	display: block;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.logo-image {
+	display: flex;
+	align-items: center;
+}
+
+.signout-btn {
+	padding: 1em;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+	.desktop-nav {
+		display: none;
+	}
+	.mobile-nav {
+		display: block;
+	}
+}
