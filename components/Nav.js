@@ -74,6 +74,7 @@ const Nav = () => {
 								setToggleDropdown((prev) => !prev);
 							}}
 						/>
+						<p>{session.user.name}</p>
 						{toggleDropdown && (
 							<div className="dropdown">
 								<Link

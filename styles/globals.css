@@ -205,6 +205,11 @@ p {
 	align-items: center;
 }
 
+.create-form {
+	display: flex;
+	flex-direction: column;
+}
+
 @media screen and (max-width: 760px) {
 	.desktop-nav {
 		display: none;
