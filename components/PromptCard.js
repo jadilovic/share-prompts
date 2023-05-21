@@ -50,8 +50,8 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
 				</p>
 				{session?.user.id === post.creator._id && pathName === '/profile' && (
 					<div>
-						<p onClick={handleEdit}>Edit</p>
-						<p onClick={handleDelete}>Delete</p>
+						<p onClick={() => handleEdit(post)}>Edit</p>
+						<p onClick={() => handleDelete(post)}>Delete</p>
 					</div>
 				)}
 			</div>
