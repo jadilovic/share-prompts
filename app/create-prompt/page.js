@@ -27,6 +27,13 @@ const CreatePrompt = () => {
 					tag: post.tag,
 				}),
 			});
+			// const response = await fetch('/api/english/new', {
+			// 	method: 'POST',
+			// 	body: JSON.stringify({
+			// 		userId: session?.user.id,
+			// 		input: post.prompt,
+			// 	}),
+			// });
 
 			if (response.ok) {
 				router.push('/');
